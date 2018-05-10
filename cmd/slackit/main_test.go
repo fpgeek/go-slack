@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/multiplay/go-slack/test"
+	"github.com/fpgeek/go-slack/test"
 	"github.com/stretchr/testify/assert"
 )
 

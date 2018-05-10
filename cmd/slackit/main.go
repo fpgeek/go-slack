@@ -15,8 +15,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/multiplay/go-slack/chat"
-	"github.com/multiplay/go-slack/webhook"
+	"github.com/fpgeek/go-slack/chat"
+	"github.com/fpgeek/go-slack/webhook"
 )
 
 // exit is the function used to exit on error its a variable so it can be easily overridden for tests.

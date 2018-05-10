@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/multiplay/go-slack"
+	"github.com/fpgeek/go-slack"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/multiplay/go-slack/chat"
-	"github.com/multiplay/go-slack/test"
+	"github.com/fpgeek/go-slack/chat"
+	"github.com/fpgeek/go-slack/test"
 
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"

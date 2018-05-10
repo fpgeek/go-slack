@@ -1,4 +1,4 @@
-# Slack [![Go Report Card](https://goreportcard.com/badge/github.com/multiplay/go-slack)](https://goreportcard.com/report/github.com/multiplay/go-slack) [![License](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/multiplay/go-slack/blob/master/LICENSE) [![GoDoc](https://godoc.org/github.com/multiplay/go-slack?status.svg)](https://godoc.org/github.com/multiplay/go-slack) [![Build Status](https://travis-ci.org/multiplay/go-slack.svg?branch=master)](https://travis-ci.org/multiplay/go-slack)
+# Slack [![Go Report Card](https://goreportcard.com/badge/github.com/fpgeek/go-slack)](https://goreportcard.com/report/github.com/fpgeek/go-slack) [![License](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/fpgeek/go-slack/blob/master/LICENSE) [![GoDoc](https://godoc.org/github.com/fpgeek/go-slack?status.svg)](https://godoc.org/github.com/fpgeek/go-slack) [![Build Status](https://travis-ci.org/fpgeek/go-slack.svg?branch=master)](https://travis-ci.org/fpgeek/go-slack)
 
 go-slack is a [Go](http://golang.org/) library for the [Slack API](https://api.slack.com/).
 
@@ -12,7 +12,7 @@ Features
 Installation
 ------------
 ```sh
-go get -u github.com/multiplay/go-slack
+go get -u github.com/fpgeek/go-slack
 ```
 
 Examples
@@ -23,8 +23,8 @@ The simplest way to use go-slack is to create a webhook client and send chat mes
 package main
 
 import (
-	"github.com/multiplay/go-slack/chat"
-	"github.com/multiplay/go-slack/webhook"
+	"github.com/fpgeek/go-slack/chat"
+	"github.com/fpgeek/go-slack/webhook"
 )
 
 func main() {
@@ -39,8 +39,8 @@ If your using [logrus](https://github.com/sirupsen/logrus) you can use the webho
 package main
 
 import (
-	"github.com/multiplay/go-slack/lrhook"
-	"github.com/multiplay/go-slack/chat"
+	"github.com/fpgeek/go-slack/lrhook"
+	"github.com/fpgeek/go-slack/chat"
 	"github.com/sirupsen/logrus"
 )
 
@@ -62,7 +62,7 @@ func main() {
 
 Documentation
 -------------
-- [GoDoc API Reference](http://godoc.org/github.com/multiplay/go-slack).
+- [GoDoc API Reference](http://godoc.org/github.com/fpgeek/go-slack).
 
 License
 -------

@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/multiplay/go-slack"
-	"github.com/multiplay/go-slack/chat"
-	"github.com/multiplay/go-slack/test"
-	. "github.com/multiplay/go-slack/webhook"
+	"github.com/fpgeek/go-slack"
+	"github.com/fpgeek/go-slack/chat"
+	"github.com/fpgeek/go-slack/test"
+	. "github.com/fpgeek/go-slack/webhook"
 
 	"github.com/stretchr/testify/assert"
 )

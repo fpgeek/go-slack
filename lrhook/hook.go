@@ -9,9 +9,9 @@ package lrhook
 import (
 	"fmt"
 
-	"github.com/multiplay/go-slack"
-	"github.com/multiplay/go-slack/chat"
-	"github.com/multiplay/go-slack/webhook"
+	"github.com/fpgeek/go-slack"
+	"github.com/fpgeek/go-slack/chat"
+	"github.com/fpgeek/go-slack/webhook"
 
 	"github.com/sirupsen/logrus"
 	"golang.org/x/time/rate"

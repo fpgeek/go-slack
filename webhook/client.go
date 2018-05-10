@@ -11,18 +11,27 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/multiplay/go-slack"
+	"github.com/fpgeek/go-slack"
 )
 
 // Client is a slack webhook client for posting messages using a webhook URL.
 type Client struct {
 	// URL is the webhook URL to use
-	URL string
+	URL        string
+	httpClient *http.Client
 }
 
 // New returns a new Client which sends request using the webhook URL.
 func New(url string) *Client {
-	return &Client{URL: url}
+	return &Client{
+		URL:        url,
+		httpClient: http.DefaultClient,
+	}
+}
+
+// SetHTTPClient sets custom http client
+func (c *Client) SetHTTPClient(httpClient *http.Client) {
+	c.httpClient = httpClient
 }
 
 // Send sends the request to slack using the webhook protocol.
@@ -34,7 +43,7 @@ func (c *Client) Send(url string, msg, resp interface{}) error {
 		return err
 	}
 
-	r, err := http.Post(c.URL, "application/json; charset=utf-8", bytes.NewReader(b))
+	r, err := c.httpClient.Post(c.URL, "application/json; charset=utf-8", bytes.NewReader(b))
 	if err != nil {
 		return err
 	}
